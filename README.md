@@ -2,7 +2,7 @@
 
 A timesheet management web app — log in, browse weekly timesheets, open a week, and add / edit / delete task entries.
 
-**Live demo:** _(add your Vercel URL here)_
+**Live demo:** https://ticktock-timesheet-kappa.vercel.app/dashboard
 
 ## Features
 
