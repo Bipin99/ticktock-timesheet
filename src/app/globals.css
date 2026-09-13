@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f9fafb;
+  --foreground: #111928;
+  --brand: #1c64f2;
+  --brand-strong: #1a56db;
+  --brand-hover: #1a56db;
+  --brand-soft: #e1effe;
+  --brand-deep: #1e429f;
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --card: #ffffff;
+  --surface: #f9fafb;
+  --panel-text: #e5e7eb;
+  --green-100: #def7ec;
+  --green-800: #03543f;
+  --yellow-100: #fdf6b2;
+  --yellow-800: #723b13;
+  --pink-100: #fce8f3;
+  --pink-800: #99154b;
+  --orange-400: #ff8a4c;
+}
+
+@theme inline {
+  --color-app: var(--background);
+  --color-ink: var(--foreground);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-deep: var(--brand-deep);
+  --color-line: var(--border);
+  --color-muted: var(--muted);
+  --color-card: var(--card);
+  --color-surface: var(--surface);
+  --color-panel-text: var(--panel-text);
+  --color-status-completed-bg: var(--green-100);
+  --color-status-completed-fg: var(--green-800);
+  --color-status-incomplete-bg: var(--yellow-100);
+  --color-status-incomplete-fg: var(--yellow-800);
+  --color-status-missing-bg: var(--pink-100);
+  --color-status-missing-fg: var(--pink-800);
+  --color-progress: var(--orange-400);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  outline-color: var(--brand);
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
